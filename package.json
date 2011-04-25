@@ -9,7 +9,7 @@
   "main": "./confu",
   "dependencies": {
     "hashish": ">=0.0.2"
-  }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/stagas/confu"
