@@ -8,13 +8,13 @@ module.exports = function() {
   var args = [].slice.call(arguments)
   
   // normalize config path
-  configPath = path.resolve(path.join.apply(this, args))
+  var configPath = path.resolve(path.join.apply(this, args))
   
   // extract root
   var rootPath = path.dirname(configPath)
   
   // parse config
-  config = JSON.parse(fs.readFileSync(configPath, 'utf8'))
+  var config = JSON.parse(fs.readFileSync(configPath, 'utf8'))
   
   if (config.paths) {
     // get paths relative to root
