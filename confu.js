@@ -8,7 +8,7 @@ module.exports = function() {
   var args = [].slice.call(arguments)
   
   // normalize config path
-  configPath = path.join.apply(this, args)
+  configPath = path.resolve(path.join.apply(this, args))
   
   // extract root
   var rootPath = path.dirname(configPath)
