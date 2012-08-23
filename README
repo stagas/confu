@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/stagas/confu.png)](http://travis-ci.org/stagas/confu)
 confu is a simplistic config parser for node.js
 
 
